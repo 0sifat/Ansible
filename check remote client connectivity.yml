@@ -1,0 +1,7 @@
+---
+- name: "Check Remote Client Connectivity"
+  hosts: all
+  remote_user: ubuntu
+  taks:
+   - name: Ping remote host
+     ping
