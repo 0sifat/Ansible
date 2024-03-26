@@ -1,0 +1,13 @@
+---
+- name: "Copy File"
+  hosts: all
+  remote_user: ubuntu
+
+  tasks:
+   - name: Coping File
+     copy:
+      src: /etc/ansible/multi.yml
+      dest: /home/ubuntu
+      owner: ubuntu
+      group: ubuntu
+      mode: 0644
